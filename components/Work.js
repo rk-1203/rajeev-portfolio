@@ -72,7 +72,7 @@ export const VideoCard = ({ url }) => (
     {/* <p className="text-dark">{description}</p> */}
     <div className="text-end">
       <iframe
-        width="280"
+        width="100%"
         src={url}
         title="YouTube video player"
         frameBorder="0"
