@@ -162,11 +162,11 @@ export const contact = {
       link: "mailto:rajeevmirror230@gmail.com",
       isPrimary: true,
     },
-    {
-      title: "Schedule Meeting",
-      link: "",
-      isPrimary: false,
-    },
+    // {
+    //   title: "Schedule Meeting",
+    //   link: "",
+    //   isPrimary: false,
+    // },
   ],
 };
 
