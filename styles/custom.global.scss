@@ -148,3 +148,12 @@ color: $primary;
   transform: translate(-0.5rem, -0.5rem);
   box-shadow: 2rem 2rem $primary;
 }
+
+footer {
+  .author {
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
