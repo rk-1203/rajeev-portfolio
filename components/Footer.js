@@ -34,7 +34,7 @@ export const Footer = () => {
     <footer className="bg-secondary text-center py-2 px-5">
       <div className="container text-muted">
         <small>
-          &copy; 2022. Made with love by{" "}
+          &copy; 2022. Made by{" "}
           <Link href="https://riteshkumar.netlify.app/">
             <a className="author">Ritesh Kumar</a>
           </Link>{" "}
