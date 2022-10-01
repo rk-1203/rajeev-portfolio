@@ -1,11 +1,10 @@
-import React, { Fragment } from 'react';
-import getConfig from 'next/config'
-import Link from 'next/link';
-import { Footer } from '../components/Footer';
-import { links, SEO, } from '../config/config';
-import { Header } from '../components/Header';
-
-const { publicRuntimeConfig } = getConfig()
+import React, { Fragment } from "react";
+import getConfig from "next/config";
+import Link from "next/link";
+import { Footer } from "../components/Footer";
+import { links, SEO } from "../config/config";
+import { Header } from "../components/Header";
+const { publicRuntimeConfig } = getConfig();
 
 export default function Home() {
   return (
@@ -13,7 +12,15 @@ export default function Home() {
       <Header seo={SEO} />
       <div className="d-flex flex-column justify-content-between bg-secondary min-vh-100">
         <div className="py-5 px-5 container text-center">
-          <img className="img-fluid my-3 card-image" width="150" height="150" src={publicRuntimeConfig.basePath + links.image} alt="profile of hashirshoaeb" />
+          <Link href="/" passHref>
+            <img
+              className="img-fluid my-3 card-image"
+              width="150"
+              height="150"
+              src={publicRuntimeConfig.basePath + links.image}
+              alt="profile of hashirshoaeb"
+            />
+          </Link>
           <h3 className="mt-3">{links.title}</h3>
           <p>{links.description}</p>
           {links.cards.map((value, index) => (
@@ -25,7 +32,6 @@ export default function Home() {
     </Fragment>
   );
 }
-
 
 function Button({ title, link }) {
   return (
