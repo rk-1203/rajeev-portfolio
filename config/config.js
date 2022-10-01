@@ -155,7 +155,7 @@ export const videos = {
 export const contact = {
   title: "Get in touch",
   description:
-    "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at rajeevmirror230@gmail.com.",
+    "Chat on a coffee! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at rajeevmirror230@gmail.com.",
   buttons: [
     {
       title: "Email Me",
